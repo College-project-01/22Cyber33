@@ -1,0 +1,90 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1f21;
+    color: #ffffff;
+}
+
+header {
+    background-color: #282c34;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+header nav ul li .dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header nav ul li:hover .dropdown {
+    display: block;
+}
+
+header nav ul li .dropdown li {
+    margin-bottom: 5px;
+}
+
+.courses {
+    padding: 50px;
+    text-align: center;
+}
+
+.course-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.course-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+}
+
+footer {
+    background-color: #282c34;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social-icons img {
+    width: 20px;
+    margin-right: 10px;
+}
