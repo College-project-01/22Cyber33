@@ -15,8 +15,23 @@
             </div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">All Notes</a></li>
-                <li><a href="#">Categories</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">All Notes</a>
+                    <div class="dropdown-content">
+                        <a href="#">Engineering 1 Year</a>
+                        <a href="#">Engineering 2 Year</a>
+                        <a href="#">Engineering 3 Year</a>
+                        <a href="#">Engineering 4 Year</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Languages</a>
+                    <div class="dropdown-content">
+                        <a href="data/Languages/Python.pdf" target="pdf-frame">Python</a>
+                        <a href="data/Languages/Java.pdf" target="pdf-frame">Java</a>
+                        <a href="data/Languages/JavaScript.pdf" target="pdf-frame">JavaScript</a>
+                    </div>
+                </li>
                 <li><a href="#">Upload</a></li>
                 <li><a href="#">FAQ</a></li>
                 <li><a href="#">Contact</a></li>
@@ -30,33 +45,33 @@
     <!-- Main Content Section -->
     <section class="explore-notes">
         <h2>Explore Notes</h2>
-        <div class="note-categories">
-            <a href="#" class="active">Science</a>
-            <a href="#">Math</a>
-            <a href="#">History</a>
-            <a href="#">Languages</a>
-            <a href="#">Other</a>
-        </div>
-        <div class="notes-container">
-            <!-- Notes Cards -->
-            <div class="note-card">
-                <img src="assets/note1.jpg" alt="Note 1">
-                <h3>Physics Notes</h3>
-                <p>Prof. John Doe</p>
-            </div>
-            <div class="note-card">
-                <img src="assets/note2.jpg" alt="Note 2">
-                <h3>Chemistry Notes</h3>
-                <p>Prof. Jane Smith</p>
-            </div>
-            <div class="note-card">
-                <img src="assets/note3.jpg" alt="Note 3">
-                <h3>History Notes</h3>
-                <p>Prof. Alan Turing</p>
-            </div>
-        </div>
-        <a href="#" class="view-all">View All Notes</a>
+        <!-- iFrame for displaying PDFs -->
+        <iframe id="pdf-frame" src="data/Engineering/1-year/sample.pdf" width="100%" height="600px"></iframe>
     </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About</h3>
+                <p>Your go-to platform for sharing and accessing educational notes.</p>
+            </div>
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="#">Upload Notes</a></li>
+                    <li><a href="#">Download Notes</a></li>
+                    <li><a href="#">View Categories</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#"><img src="assets/social-icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="assets/social-icons/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="assets/social-icons/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
